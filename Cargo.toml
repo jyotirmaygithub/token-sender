@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/token-sender-backend"
+]
+resolver = "2"

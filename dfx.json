@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "token-sender-backend": {
+      "candid": "src/token-sender-backend/token-sender-backend.did",
+      "package": "token-sender-backend",
+      "type": "rust"
+    },
+    "token-sender-frontend": {
+      "dependencies": [
+        "token-sender-backend"
+      ],
+      "source": [
+        "src/token-sender-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "token-sender-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
