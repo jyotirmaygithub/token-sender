@@ -1,3 +1,4 @@
 service : {
-    "greet": (text) -> (text) query;
+  get_token_name : () -> (text) query;
+  get_user_balance : (principal) -> (nat) query;
 }
